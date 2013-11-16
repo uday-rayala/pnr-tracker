@@ -1,0 +1,16 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>PNR Tracker</h1>
+    <form action="add" method="POST">
+      <input type="text" name="pnr"/>
+      <input type="submit" value="Track"/>
+    </form>
+    <ul>
+      <% @requests.each do |request| %>
+      <li><%= request.pnr %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
