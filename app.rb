@@ -1,10 +1,7 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require './environments'
-
-
-class PnrTrackRequest < ActiveRecord::Base
-end
+require './pnr_track_request'
 
 get '/' do
   @requests = PnrTrackRequest.all
