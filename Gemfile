@@ -5,6 +5,7 @@ gem 'sinatra-activerecord'
 gem 'clockwork'
 gem 'httpclient'
 gem 'nokogiri'
+gem 'rspec'
 
 group :development do
   gem 'sqlite3'
